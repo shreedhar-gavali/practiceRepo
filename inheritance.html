@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+class Student
+{
+    constructor(prn,name,m1,m2,m3)
+    {
+        this.prn=prn;
+        this.name=name;
+        this.m1=m1;
+        this.m2=m2;
+        this.m3=m3;
+    }
+display()
+{
+document.write("prn= " ,this.prn , " name =",this.name, " m1= ",this.m1," m2= ",this.m2," m3= " ,this.m3 );
+}
+}
+
+    class Result extends Student
+{
+    constructor(prn,name,m1,m2,m3){
+        super(prn,name,m1,m2,m3);
+
+    }
+    calculate()
+    {
+        this.total=this.m1+this.m2+this.m3;
+        this.percent=(this.total/3)*100;
+       this.display();
+        document.write("<br>","total = ",this.total,"<br>","percent = ",this.percent);
+        
+    }
+
+}
+
+class childclass extends Result
+{
+    constructor()
+    {
+        super(percent);
+    }
+
+  
+    
+    if(this.percent>=40)
+{
+document.write("pass");
+}
+else{
+    document.write("fail");
+}
+
+}
+
+const obj=new Result(101,"shree",20,30,40);
+obj.calculate();
+
+// obj.display();
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>use of get and set methods </title>
+</head>
+<body>
+    <script>
+
+class Employee
+{
+    set empname(name)
+    {
+        this.name=name;
+
+    }
+
+    get empname()
+    {
+        return(this.name);
+    }
+}
+
+const obj=new Employee();
+obj.name="shree";
+var str=obj.name;
+    document.write(str);
+
+    </script>
+</body>
+</html>

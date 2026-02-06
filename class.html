@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+class Student
+{ 
+    
+    constructor (id,name,marks)
+    {
+        this.id=id;
+        this.name=name;
+        this.marks=marks;
+    // this.percent=(marks/5)*100; alternate waty to 
+    }
+    
+    display()
+    {
+     document.write("id = ",this.id,"<br>"," name = ",this.name,"<br>","marks=",this.marks,"<br>");   
+    }
+    percent()
+    {
+        const result=(marks/5)*100;
+        document.write("percent = ",result);
+    }
+    }
+const marks=parseInt(prompt("enter the marks <br>"));
+
+const s=new Student(101,"shree",marks);
+
+
+
+s.display();
+s.percent();
+
+    </script>
+</body>
+</html>

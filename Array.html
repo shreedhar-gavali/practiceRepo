@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var arr=new Array(1,4,3,2,5);
+var i;
+for(i=0;i<=arr.length;i++){
+document.write(arr[i],"<br>")
+}
+
+arr.push(7);
+for(i=0;i<=arr.length;i++){
+document.write(arr[i],"<br>")
+}
+
+arr.sort();
+for(i=0;i<=arr.length;i++){
+document.write(arr[i],"<br>")
+}
+
+arr.pop();
+for(i=0;i<=arr.length;i++){
+document.write(arr[i],"<br>")
+}
+
+arr.pop(3);
+for(i=0;i<=arr.length;i++){
+document.write(arr[i],"<br>")
+}
+arr.push(6);
+for(i=0;i<=arr.length;i++){
+document.write(arr[i],"<br>")
+}
+
+arr.shift();
+for(i=0;i<=arr.length;i++){
+document.write(arr[i],"<br>")
+}
+arr.unshift(1);
+for(i=0;i<=arr.length;i++){
+document.write(arr[i],"<br>")
+}
+
+var arr1 =new Array(8,9);
+
+var arr2=new Array();
+
+arr2=arr.concat(arr1);
+
+
+for(i=0;i<=arr.length;i++){
+document.write(arr2[i],"<br>")
+}
+document.write("<br>");
+
+for(i=0;i<=arr1.length;i++){
+document.write(arr1[i],"<br>")
+}
+
+arr1.delete();
+
+for(i=0;i<=arr1.length;i++){
+document.write(arr1[i],"<br>")
+}
+
+
+
+    </script>
+</body>
+</html>
